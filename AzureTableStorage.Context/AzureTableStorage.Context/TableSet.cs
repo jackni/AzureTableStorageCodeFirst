@@ -46,21 +46,7 @@ namespace AzureTableStorage.Context
         #endregion
 
         #region Methods
-        public virtual IEnumerable<T> GetAll()
-        {
-          
-            try
-            {
-                TableQuery<T> query = new TableQuery<T>().Where(TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, "dorbleMVPClient_dorbleDeviceId"));
-                var result = table.ExecuteQuery(query);
-                //var result = table.ExecuteQuery(query, typeResolver, null, null);
-                return result;
-            }
-            catch (Exception ex)
-            {
-                throw;
-            }
-        }
+        
         
         public virtual IEnumerable<T> Find(Expression<Func<T, bool>> predicate)
         {
