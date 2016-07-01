@@ -46,7 +46,8 @@ public class ToDoContext : TableContext
 
 
 <p>
-```cs
+<pre>
+<code class='language-cs'>
 public class ToDoController : ApiController
     {
         [HttpPost]
@@ -84,7 +85,8 @@ public class ToDoController : ApiController
             }
         }
     }
-```
+</code>
+</pre>
 </p>
 
 
