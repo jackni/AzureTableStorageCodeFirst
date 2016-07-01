@@ -3,3 +3,9 @@
 ################################################################################
 
 /AzureTableStorage.Context/.vs
+/AzureTableStorage.Context/AzureTableStorage.Context/bin/Debug
+/AzureTableStorage.Context/AzureTableStorage.Context/obj/Debug
+/AzureTableStorage.Context/Example/bin
+/AzureTableStorage.Context/Example/obj/Debug
+/AzureTableStorage.Context/Example/Example.csproj.user
+/AzureTableStorage.Context/packages
