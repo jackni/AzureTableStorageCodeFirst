@@ -75,7 +75,7 @@ public class ToDoController : ApiController
             {
                 using (var context = new ToDoContext())
                 {
-                    var result = context.ToDoItems.Find(i=>i.PartitionKey== "<my test partionKey>");
+                    var result = context.ToDoItems.Find(i=>i.PartitionKey== "my test partionKey");
                     return Ok(result);
                 }
             }
