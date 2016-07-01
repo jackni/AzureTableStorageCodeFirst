@@ -35,7 +35,7 @@ public class ToDoContext : TableContext
         ToDoItems = new TableSet<ToDoItem>();
         var todoTable = tableClient.GetTableReference("ToDoItem");
         ToDoItems.Table = todoTable;
-            todoTable.CreateIfNotExists();
+        todoTable.CreateIfNotExists();
     }
 
     #endregion
@@ -46,7 +46,7 @@ public class ToDoContext : TableContext
 
 
 <p>
-<code>
+```cs
 public class ToDoController : ApiController
     {
         [HttpPost]
@@ -84,7 +84,7 @@ public class ToDoController : ApiController
             }
         }
     }
-</code>
+```
 </p>
 
 
